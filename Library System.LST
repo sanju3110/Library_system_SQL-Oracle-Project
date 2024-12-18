@@ -1,0 +1,1090 @@
+SQL> SELECT * FROM TAB;
+
+TNAME                          TABTYPE  CLUSTERID                               
+------------------------------ ------- ----------                               
+DEPT                           TABLE                                            
+EMP                            TABLE                                            
+BONUS                          TABLE                                            
+SALGRADE                       TABLE                                            
+SHOP                           TABLE                                            
+DUKAN                          TABLE                                            
+MALL                           TABLE                                            
+
+7 rows selected.
+
+SQL> SELECT* FROM EMP;
+
+     EMPNO ENAME      JOB              MGR HIREDATE         SAL       COMM      
+---------- ---------- --------- ---------- --------- ---------- ----------      
+    DEPTNO                                                                      
+----------                                                                      
+      7369 SMITH      CLERK           7902 17-DEC-80        800                 
+        20                                                                      
+                                                                                
+      7499 ALLEN      SALESMAN        7698 20-FEB-81       1600        300      
+        30                                                                      
+                                                                                
+      7521 WARD       SALESMAN        7698 22-FEB-81       1250        500      
+        30                                                                      
+                                                                                
+
+     EMPNO ENAME      JOB              MGR HIREDATE         SAL       COMM      
+---------- ---------- --------- ---------- --------- ---------- ----------      
+    DEPTNO                                                                      
+----------                                                                      
+      7566 JONES      MANAGER         7839 02-APR-81       2975                 
+        20                                                                      
+                                                                                
+      7654 MARTIN     SALESMAN        7698 28-SEP-81       1250       1400      
+        30                                                                      
+                                                                                
+      7698 BLAKE      MANAGER         7839 01-MAY-81       2850                 
+        30                                                                      
+                                                                                
+
+     EMPNO ENAME      JOB              MGR HIREDATE         SAL       COMM      
+---------- ---------- --------- ---------- --------- ---------- ----------      
+    DEPTNO                                                                      
+----------                                                                      
+      7782 CLARK      MANAGER         7839 09-JUN-81       2450                 
+        10                                                                      
+                                                                                
+      7788 SCOTT      ANALYST         7566 19-APR-87       3000                 
+        20                                                                      
+                                                                                
+      7839 KING       PRESIDENT            17-NOV-81       5000                 
+        10                                                                      
+                                                                                
+
+     EMPNO ENAME      JOB              MGR HIREDATE         SAL       COMM      
+---------- ---------- --------- ---------- --------- ---------- ----------      
+    DEPTNO                                                                      
+----------                                                                      
+      7844 TURNER     SALESMAN        7698 08-SEP-81       1500          0      
+        30                                                                      
+                                                                                
+      7876 ADAMS      CLERK           7788 23-MAY-87       1100                 
+        20                                                                      
+                                                                                
+      7900 JAMES      CLERK           7698 03-DEC-81        950                 
+        30                                                                      
+                                                                                
+
+     EMPNO ENAME      JOB              MGR HIREDATE         SAL       COMM      
+---------- ---------- --------- ---------- --------- ---------- ----------      
+    DEPTNO                                                                      
+----------                                                                      
+      7902 FORD       ANALYST         7566 03-DEC-81       3000                 
+        20                                                                      
+                                                                                
+      7934 MILLER     CLERK           7782 23-JAN-82       1300                 
+        10                                                                      
+                                                                                
+
+14 rows selected.
+
+SQL> SET PAGES 1000 LINES 1000;
+SQL> /
+
+     EMPNO ENAME      JOB              MGR HIREDATE         SAL       COMM     DEPTNO                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+---------- ---------- --------- ---------- --------- ---------- ---------- ----------                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+      7369 SMITH      CLERK           7902 17-DEC-80        800                    20                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+      7499 ALLEN      SALESMAN        7698 20-FEB-81       1600        300         30                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+      7521 WARD       SALESMAN        7698 22-FEB-81       1250        500         30                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+      7566 JONES      MANAGER         7839 02-APR-81       2975                    20                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+      7654 MARTIN     SALESMAN        7698 28-SEP-81       1250       1400         30                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+      7698 BLAKE      MANAGER         7839 01-MAY-81       2850                    30                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+      7782 CLARK      MANAGER         7839 09-JUN-81       2450                    10                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+      7788 SCOTT      ANALYST         7566 19-APR-87       3000                    20                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+      7839 KING       PRESIDENT            17-NOV-81       5000                    10                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+      7844 TURNER     SALESMAN        7698 08-SEP-81       1500          0         30                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+      7876 ADAMS      CLERK           7788 23-MAY-87       1100                    20                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+      7900 JAMES      CLERK           7698 03-DEC-81        950                    30                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+      7902 FORD       ANALYST         7566 03-DEC-81       3000                    20                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+      7934 MILLER     CLERK           7782 23-JAN-82       1300                    10                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+
+14 rows selected.
+
+SQL>  --MEMBER TABLE CREATION WITHOUT CONSTRAINTS--
+SQL> CREATE TABLE MEMBER
+  2  (
+  3      MEMBER_ID NUMBER(5),           -- MEMBER'S UNIQUE ID--
+  4      MEMBER_NAME VARCHAR2(30),      -- NAME OF THE MEMBER--
+  5      MEMBER_ADDRESS VARCHAR2(250),  -- ADDRESS OF THE MEMBER--
+  6      ACC_OPEN_DATE DATE,            -- ACCOUNT OPENING DATE--
+  7      MEMBERSHIP_TYPE VARCHAR2(20),  -- TYPE OF MEMBERSHIP--
+  8      FEES_PAID NUMBER(4),           -- FEES PAID BY THE MEMBER--
+  9      MAX_BOOKS_ALLOWED NUMBER(2),   -- MAXIMUM BOOKS ALLOWED TO ISSUE--
+ 10      PENALTY_AMOUNT NUMBER(7, 2)    -- PENALTY AMOUNT--
+ 11  );
+
+Table created.
+
+SQL> --BOOK TABLE CREATION WITHOUT CONSTRAINTS--
+SQL> CREATE TABLE BOOKS
+  2  (
+  3      BOOK_NO NUMBER(6),          -- UNIQUE BOOK IDENTIFICATION NUMBER--
+  4      BOOK_NAME VARCHAR2(30),     -- NAME OF THE BOOK--
+  5      AUTHOR_NAME VARCHAR2(30),   -- NAME OF THE AUTHOR--
+  6      COST NUMBER(7, 2),          -- COST OF THE BOOK--
+  7      CATEGORY CHAR(10)           -- BOOK CATEGORY--
+  8  );
+
+Table created.
+
+SQL> 
+SQL> --ISSUE TABLE CREATION WITHOUT CONSTRAINTS--
+SQL> CREATE TABLE ISSUE
+  2  (
+  3      LIB_ISSUE_ID NUMBER(10),  -- LIBRARY ISSUE ID--
+  4      BOOK_NO NUMBER(6),        -- BOOK NUMBER BEING ISSUED--
+  5      MEMBER_ID NUMBER(5),      -- MEMBER ID WHO ISSUED THE BOOK--
+  6      ISSUE_DATE DATE,          -- DATE OF ISSUE--
+  7      RETURN_DATE DATE          -- DATE OF RETURN--
+  8  );
+
+Table created.
+
+SQL> DESC MEMBER;
+ Name                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              Null?    Type
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ MEMBER_ID                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  NUMBER(5)
+ MEMBER_NAME                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                VARCHAR2(30)
+ MEMBER_ADDRESS                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             VARCHAR2(250)
+ ACC_OPEN_DATE                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              DATE
+ MEMBERSHIP_TYPE                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            VARCHAR2(20)
+ FEES_PAID                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  NUMBER(4)
+ MAX_BOOKS_ALLOWED                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          NUMBER(2)
+ PENALTY_AMOUNT                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             NUMBER(7,2)
+
+SQL> DESC ISSUE; --view the structure of issue table--
+> /
+SP2-0565: Illegal identifier.
+SQL> ----view the structure of issue table--
+SQL> DESC ISSUE;
+ Name                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              Null?    Type
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ LIB_ISSUE_ID                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               NUMBER(10)
+ BOOK_NO                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    NUMBER(6)
+ MEMBER_ID                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  NUMBER(5)
+ ISSUE_DATE                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 DATE
+ RETURN_DATE                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                DATE
+
+SQL> --view the structure of issue table--
+SQL>  --view the structure of BOOKS TABLE--
+SQL> DESC BOOKS;
+ Name                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              Null?    Type
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ BOOK_NO                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    NUMBER(6)
+ BOOK_NAME                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  VARCHAR2(30)
+ AUTHOR_NAME                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                VARCHAR2(30)
+ COST                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       NUMBER(7,2)
+ CATEGORY                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   CHAR(10)
+
+SQL> DROP TABLE MEMBER;
+
+Table dropped.
+
+SQL> --CREATE TABLE MEMBER WITH CONSTRAINTS--
+SQL> CREATE TABLE MEMBER
+  2  (
+  3      MEMBER_ID NUMBER(5) PRIMARY KEY,           -- UNIQUE MEMBER ID--
+  4      MEMBER_NAME VARCHAR2(30),               -- NAME OF THE LIBRARY MEMBER--
+  5      MEMBER_ADDRESS VARCHAR2(50),              -- ADDRESS OF THE MEMBER--
+  6      ACC_OPEN_DATE DATE,                         -- DATE OF MEMBERSHIP--
+  7      MEMBERSHIP_TYPE VARCHAR2(20) CHECK
+  8          (MEMBERSHIP_TYPE IN ('Lifetime', 'Annual', 'Half Yearly', 'Quarterly')),
+  9                                                  -- TYPE OF MEMBERSHIP--
+ 10      FEES_PAID NUMBER(4),                      -- MEMBERSHIP FEES PAID--
+ 11      MAX_BOOKS_ALLOWED NUMBER(2),          -- TOTAL NUMBER OF BOOKS ISSUE--
+ 12      PENALTY_AMOUNT NUMBER(7, 2)                  -- PENALTY AMOUNT--
+ 13  );
+
+Table created.
+
+SQL> --Modify the table Member increase the width of the member name to 3 char--
+SQL> 
+SQL> ALTER TABLE MEMBER
+  2  MODIFY (MEMBER_NAME VARCHAR(30));
+
+Table altered.
+
+SQL> -- Add a column named as Reference of Char(30) to Issue table--
+SQL> ALTER TABLE MEMBER
+  2  ADD REFERENCE CHAR(30);--add column name reference with datatype char(30)--
+  3  
+SQL> ALTER TABLE MEMBER
+  2  ADD REFERENCE CHAR(30);
+
+Table altered.
+
+SQL>  --Delete/Drop the column Reference from Issue.--
+SQL> ALTER TABLE MEMBER
+  2  DROP COLUMN REFERENCE;
+
+Table altered.
+
+SQL> --Rename the table Issue to Lib_Issue--
+SQL> ALTER TABLE ISSUE;
+ALTER TABLE ISSUE
+                *
+ERROR at line 1:
+ORA-02210: no options specified for ALTER TABLE 
+
+
+SQL> RENAM
+SP2-0042: unknown command "RENAM" - rest of line ignored.
+SQL> ALTER TABLE ISSUE
+  2       RENAME TO LIB_ISSUE;
+
+Table altered.
+
+SQL> 
+SQL> DESC MEMBER;
+ Name                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              Null?    Type
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ MEMBER_ID                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         NOT NULL NUMBER(5)
+ MEMBER_NAME                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                VARCHAR2(30)
+ MEMBER_ADDRESS                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             VARCHAR2(50)
+ ACC_OPEN_DATE                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              DATE
+ MEMBERSHIP_TYPE                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            VARCHAR2(20)
+ FEES_PAID                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  NUMBER(4)
+ MAX_BOOKS_ALLOWED                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          NUMBER(2)
+ PENALTY_AMOUNT                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             NUMBER(7,2)
+
+SQL>  INSERT INTO MEMBER VALUES(1, 'RICHA SHARMA', 'PUNE', '10-DEC-05', 'Lifetime', 2500, 5, 50);
+
+1 row created.
+
+SQL>  INSERT INTO MEMBER VALUES (2, 'GARIMA SEN', 'PUNE', SYSDATE, 'Annual', 1000, 3, NULL);
+
+1 row created.
+
+SQL> INSERT INTO MEMBER VALUES(3, 'ROHAN SHARMA', 'MUMBAI', '12-Oct-06', 'Lifetime', 500,5,60);
+
+1 row created.
+
+SQL> INSERT INTO MEMBER VALUES(4, 'SWATI MISHRA','KERLA', '23-NOV-08' 'Quarterly',600, 6, 70);
+INSERT INTO MEMBER VALUES(4, 'SWATI MISHRA','KERLA', '23-NOV-08' 'Quarterly',600, 6, 70)
+                                                                 *
+ERROR at line 1:
+ORA-00917: missing comma 
+
+
+SQL> INSERT INTO MEMBER VALUES(4,'SWATI MISHRA', 'KERLA','23-NOV-08', 'Quarterly', 600, 6, 70);
+
+1 row created.
+
+SQL> INSERT INTO MEMBER VALUES(5,'VARUN JOGI', 'KERLA','24-SEPT-08', 'Half-Yearly', 600, 6, 70);
+INSERT INTO MEMBER VALUES(5,'VARUN JOGI', 'KERLA','24-SEPT-08', 'Half-Yearly', 600, 6, 70)
+                                                  *
+ERROR at line 1:
+ORA-01841: (full) year must be between -4713 and +9999, and not be 0 
+
+
+SQL> INSERT INTO MEMBER VALUES(5,'VARUN DHAVAN', 'THANE','24-SEP-08', 'Half Yearly', 600, 6, 70);
+
+1 row created.
+
+SQL> INSERT INTO MEMBER VALUES(6,'RAM DAS', 'TRIPURA','25-JAN-10','Quarterly', 400, 3, 55);
+
+1 row created.
+
+SQL> INSERT INTO MEMBER VALUES(7,'SMITH REDDY', 'BENGAL','10-JAN-23','Lifetime', 3450, 6, 80);
+
+1 row created.
+
+SQL> 
+SQL> SELECT* FROM MEMBER;
+
+ MEMBER_ID MEMBER_NAME                    MEMBER_ADDRESS                                     ACC_OPEN_ MEMBERSHIP_TYPE       FEES_PAID MAX_BOOKS_ALLOWED PENALTY_AMOUNT                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+---------- ------------------------------ -------------------------------------------------- --------- -------------------- ---------- ----------------- --------------                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+         1 RICHA SHARMA                   PUNE                                               10-DEC-05 Lifetime                   2500                 5             50                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+         2 GARIMA SEN                     PUNE                                               06-DEC-24 Annual                     1000                 3                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+         3 ROHAN SHARMA                   MUMBAI                                             12-OCT-06 Lifetime                    500                 5             60                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+         4 SWATI MISHRA                   KERLA                                              23-NOV-08 Quarterly                   600                 6             70                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+         5 VARUN DHAVAN                   THANE                                              24-SEP-08 Half Yearly                 600                 6             70                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+         6 RAM DAS                        TRIPURA                                            25-JAN-10 Quarterly                   400                 3             55                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+         7 SMITH REDDY                    BENGAL                                             10-JAN-23 Lifetime                   3450                 6             80                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+
+7 rows selected.
+
+SQL> SET PAGESIZE 9999
+SQL> SET LINESIZE 200
+SQL> COLUMN MEMBER_NAME FORMAT A14;
+SQL> COLUMN MEMBER_ADDRESS FORMAT A14;
+SQL> SELECT* FROM MEMBER;
+
+ MEMBER_ID MEMBER_NAME    MEMBER_ADDRESS ACC_OPEN_ MEMBERSHIP_TYPE       FEES_PAID MAX_BOOKS_ALLOWED PENALTY_AMOUNT                                                                                     
+---------- -------------- -------------- --------- -------------------- ---------- ----------------- --------------                                                                                     
+         1 RICHA SHARMA   PUNE           10-DEC-05 Lifetime                   2500                 5             50                                                                                     
+         2 GARIMA SEN     PUNE           06-DEC-24 Annual                     1000                 3                                                                                                    
+         3 ROHAN SHARMA   MUMBAI         12-OCT-06 Lifetime                    500                 5             60                                                                                     
+         4 SWATI MISHRA   KERLA          23-NOV-08 Quarterly                   600                 6             70                                                                                     
+         5 VARUN DHAVAN   THANE          24-SEP-08 Half Yearly                 600                 6             70                                                                                     
+         6 RAM DAS        TRIPURA        25-JAN-10 Quarterly                   400                 3             55                                                                                     
+         7 SMITH REDDY    BENGAL         10-JAN-23 Lifetime                   3450                 6             80                                                                                     
+
+7 rows selected.
+
+SQL> COLUMN MEMBER_ID FORMAT 9999;
+SQL> COLUMN ACC_OPEN_DATE FORMAT A14;
+SQL> SELECT* FROM MEMBER;
+
+MEMBER_ID MEMBER_NAME    MEMBER_ADDRESS ACC_OPEN_DATE  MEMBERSHIP_TYPE       FEES_PAID MAX_BOOKS_ALLOWED PENALTY_AMOUNT                                                                                 
+--------- -------------- -------------- -------------- -------------------- ---------- ----------------- --------------                                                                                 
+        1 RICHA SHARMA   PUNE           10-DEC-05      Lifetime                   2500                 5             50                                                                                 
+        2 GARIMA SEN     PUNE           06-DEC-24      Annual                     1000                 3                                                                                                
+        3 ROHAN SHARMA   MUMBAI         12-OCT-06      Lifetime                    500                 5             60                                                                                 
+        4 SWATI MISHRA   KERLA          23-NOV-08      Quarterly                   600                 6             70                                                                                 
+        5 VARUN DHAVAN   THANE          24-SEP-08      Half Yearly                 600                 6             70                                                                                 
+        6 RAM DAS        TRIPURA        25-JAN-10      Quarterly                   400                 3             55                                                                                 
+        7 SMITH REDDY    BENGAL         10-JAN-23      Lifetime                   3450                 6             80                                                                                 
+
+7 rows selected.
+
+SQL> COLUMN MEMBERSHIP_TYPE FORMAT A15;
+SQL> SELECT* FROM MEMBER;
+
+MEMBER_ID MEMBER_NAME    MEMBER_ADDRESS ACC_OPEN_DATE  MEMBERSHIP_TYPE  FEES_PAID MAX_BOOKS_ALLOWED PENALTY_AMOUNT                                                                                      
+--------- -------------- -------------- -------------- --------------- ---------- ----------------- --------------                                                                                      
+        1 RICHA SHARMA   PUNE           10-DEC-05      Lifetime              2500                 5             50                                                                                      
+        2 GARIMA SEN     PUNE           06-DEC-24      Annual                1000                 3                                                                                                     
+        3 ROHAN SHARMA   MUMBAI         12-OCT-06      Lifetime               500                 5             60                                                                                      
+        4 SWATI MISHRA   KERLA          23-NOV-08      Quarterly              600                 6             70                                                                                      
+        5 VARUN DHAVAN   THANE          24-SEP-08      Half Yearly            600                 6             70                                                                                      
+        6 RAM DAS        TRIPURA        25-JAN-10      Quarterly              400                 3             55                                                                                      
+        7 SMITH REDDY    BENGAL         10-JAN-23      Lifetime              3450                 6             80                                                                                      
+
+7 rows selected.
+
+SQL> COLUMN FEES_PAID FORMAT 99999;
+SQL> SELECT* FROM MEMBER;
+
+MEMBER_ID MEMBER_NAME    MEMBER_ADDRESS ACC_OPEN_DATE  MEMBERSHIP_TYPE FEES_PAID MAX_BOOKS_ALLOWED PENALTY_AMOUNT                                                                                       
+--------- -------------- -------------- -------------- --------------- --------- ----------------- --------------                                                                                       
+        1 RICHA SHARMA   PUNE           10-DEC-05      Lifetime             2500                 5             50                                                                                       
+        2 GARIMA SEN     PUNE           06-DEC-24      Annual               1000                 3                                                                                                      
+        3 ROHAN SHARMA   MUMBAI         12-OCT-06      Lifetime              500                 5             60                                                                                       
+        4 SWATI MISHRA   KERLA          23-NOV-08      Quarterly             600                 6             70                                                                                       
+        5 VARUN DHAVAN   THANE          24-SEP-08      Half Yearly           600                 6             70                                                                                       
+        6 RAM DAS        TRIPURA        25-JAN-10      Quarterly             400                 3             55                                                                                       
+        7 SMITH REDDY    BENGAL         10-JAN-23      Lifetime             3450                 6             80                                                                                       
+
+7 rows selected.
+
+SQL> COLUMN MAX_BOOKS_ALLOWED FORMAT 9999.99;
+SQL> SELECT* FROM MEMBER;
+
+MEMBER_ID MEMBER_NAME    MEMBER_ADDRESS ACC_OPEN_DATE  MEMBERSHIP_TYPE FEES_PAID MAX_BOOKS_ALLOWED PENALTY_AMOUNT                                                                                       
+--------- -------------- -------------- -------------- --------------- --------- ----------------- --------------                                                                                       
+        1 RICHA SHARMA   PUNE           10-DEC-05      Lifetime             2500              5.00             50                                                                                       
+        2 GARIMA SEN     PUNE           06-DEC-24      Annual               1000              3.00                                                                                                      
+        3 ROHAN SHARMA   MUMBAI         12-OCT-06      Lifetime              500              5.00             60                                                                                       
+        4 SWATI MISHRA   KERLA          23-NOV-08      Quarterly             600              6.00             70                                                                                       
+        5 VARUN DHAVAN   THANE          24-SEP-08      Half Yearly           600              6.00             70                                                                                       
+        6 RAM DAS        TRIPURA        25-JAN-10      Quarterly             400              3.00             55                                                                                       
+        7 SMITH REDDY    BENGAL         10-JAN-23      Lifetime             3450              6.00             80                                                                                       
+
+7 rows selected.
+
+SQL> 
+SQL> COLUMN MAX_BOOKS_ALLOWED 9999;
+SP2-0158: unknown COLUMN option "9999"
+SQL> COLUMN MAX_BOOKS_ALLOWED FORMAT 9999;
+SQL> SELECT* FROM MEMBER;
+
+MEMBER_ID MEMBER_NAME    MEMBER_ADDRESS ACC_OPEN_DATE  MEMBERSHIP_TYPE FEES_PAID MAX_BOOKS_ALLOWED PENALTY_AMOUNT                                                                                       
+--------- -------------- -------------- -------------- --------------- --------- ----------------- --------------                                                                                       
+        1 RICHA SHARMA   PUNE           10-DEC-05      Lifetime             2500                 5             50                                                                                       
+        2 GARIMA SEN     PUNE           06-DEC-24      Annual               1000                 3                                                                                                      
+        3 ROHAN SHARMA   MUMBAI         12-OCT-06      Lifetime              500                 5             60                                                                                       
+        4 SWATI MISHRA   KERLA          23-NOV-08      Quarterly             600                 6             70                                                                                       
+        5 VARUN DHAVAN   THANE          24-SEP-08      Half Yearly           600                 6             70                                                                                       
+        6 RAM DAS        TRIPURA        25-JAN-10      Quarterly             400                 3             55                                                                                       
+        7 SMITH REDDY    BENGAL         10-JAN-23      Lifetime             3450                 6             80                                                                                       
+
+7 rows selected.
+
+SQL> --Modify the column Member_name. Decrease the width of the member
+SQL> name to 20 characters. (If it does not allow state the reason for that)
+SP2-0734: unknown command beginning "name to 20..." - rest of line ignored.
+SQL> 
+SQL> --MODIFY COLUMN MEMBER_NAME--
+SQL>  ALTER TABLE MEMBER
+  2   MODIFY (MEMBER_NAME VARCHAR(20));
+
+Table altered.
+
+SQL> --insert a record with Max_Books_Allowed = 110--
+SQL> INSERT INTO MEMBER VALUES(8,'JOHN DESOZA', 'UP','10-JAN-23','Lifetime', 450, 110, 40)
+  2  ;
+INSERT INTO MEMBER VALUES(8,'JOHN DESOZA', 'UP','10-JAN-23','Lifetime', 450, 110, 40)
+                                                                             *
+ERROR at line 1:
+ORA-01438: value larger than specified precision allowed for this column 
+
+
+SQL> 
+SQL> --column indicates that the value   insert for Max_Books_Allowed (110) is too large for the column's data type or constraint --
+SQL> 
+SQL> --Generate another table named Member101 using a Create command--
+SQL> CREATE TABLE MEMBER 101
+  2  AS SELECT* FROM MEMBER;
+CREATE TABLE MEMBER 101
+                    *
+ERROR at line 1:
+ORA-00922: missing or invalid option 
+
+
+SQL> CREATE TABLE MEMBER 101 --CREATE NEW TABLE MEMBER101--
+>    AS SELECT * FROM MEMBER;
+CREATE TABLE MEMBER 101 --CREATE NEW TABLE MEMBER101-    AS SELECT * FROM MEMBER
+                    *
+ERROR at line 1:
+ORA-00922: missing or invalid option 
+
+
+SQL> CREATE TABLE Member101
+  2  AS SELECT * FROM MEMBER;
+
+Table created.
+
+SQL> SELECT* FROM Member101;
+
+MEMBER_ID MEMBER_NAME    MEMBER_ADDRESS ACC_OPEN_DATE  MEMBERSHIP_TYPE FEES_PAID MAX_BOOKS_ALLOWED PENALTY_AMOUNT                                                                                       
+--------- -------------- -------------- -------------- --------------- --------- ----------------- --------------                                                                                       
+        1 RICHA SHARMA   PUNE           10-DEC-05      Lifetime             2500                 5             50                                                                                       
+        2 GARIMA SEN     PUNE           06-DEC-24      Annual               1000                 3                                                                                                      
+        3 ROHAN SHARMA   MUMBAI         12-OCT-06      Lifetime              500                 5             60                                                                                       
+        4 SWATI MISHRA   KERLA          23-NOV-08      Quarterly             600                 6             70                                                                                       
+        5 VARUN DHAVAN   THANE          24-SEP-08      Half Yearly           600                 6             70                                                                                       
+        6 RAM DAS        TRIPURA        25-JAN-10      Quarterly             400                 3             55                                                                                       
+        7 SMITH REDDY    BENGAL         10-JAN-23      Lifetime             3450                 6             80                                                                                       
+
+7 rows selected.
+
+SQL> 
+SQL> --Add constraints on columns max_books_allowed and penalty_amt --
+SQL> ALTER TABLE Member101
+  2  ADD CONSTRAINT check_MAX_BOOKS_ALLOWED
+  3  CHECK (MAX_BOOKS_ALLOWED < 100);
+
+Table altered.
+
+SQL> ALTER TABLE Member101
+  2  ADD CONSTRAINT CHK_PENALTY_AMOUNT
+  3  CHECK (PENALTY_AMOUNT <= 1000);
+
+Table altered.
+
+SQL> DROP TABLE BOOKS;
+
+Table dropped.
+
+SQL> CREATE TABLE Books (
+  2      Book_No INT PRIMARY KEY, -- Book_No is the primary key.
+  3      Book_Name VARCHAR(100) NOT NULL, --  Book_Name cannot be null.
+  4      Author VARCHAR(100),
+  5      Cost INT,
+  6       Category VARCHAR(50) CHECK (Category IN ('Science', 'Fiction', 'Database', 'RDBMS', 'Others', 'System')) -- Restricts Category to specific values.--
+  7  );
+
+Table created.
+
+SQL> INSERT INTO Books (Book_No, Book_Name, Author, Cost, Category) VALUES
+  2  (101, 'Let us C', 'Denis Ritchie', 450, 'System'),
+  3  (102, 'Oracle - Complete Ref', 'Loni', 550, 'Database'),
+  4  (103, 'Mastering SQL', 'Loni', 250, 'Database'),
+  5  (104, 'PL SQL-Ref', 'Scott Urman', 750, 'Database');
+(101, 'Let us C', 'Denis Ritchie', 450, 'System'),
+                                                 *
+ERROR at line 2:
+ORA-00933: SQL command not properly ended 
+
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1  INSERT INTO Books (Book_No, Book_Name, Author, Cost, Category) VALUES
+  2  (101, 'Let us C', 'Denis Ritchie', 450, 'System'),
+  3  (102, 'Oracle - Complete Ref', 'Loni', 550, 'Database'),
+  4  (103, 'Mastering SQL', 'Loni', 250, 'Database'),
+  5* (104, 'PL SQL-Ref', 'Scott Urman', 750, 'Database');
+SQL> /
+(101, 'Let us C', 'Denis Ritchie', 450, 'System'),
+                                                 *
+ERROR at line 2:
+ORA-00933: SQL command not properly ended 
+
+
+SQL> 
+SQL> INSERT INTO Books (Book_No, Book_Name, Author, Cost, Category) VALUES
+  2  (101, 'Let us C', 'Denis Ritchie', 450, 'System');
+
+1 row created.
+
+SQL> INSERT INTO Books (Book_No, Book_Name, Author, Cost, Category) VALUES
+  2  (102, 'Oracle - Complete Ref', 'Loni', 550, 'Database');
+
+1 row created.
+
+SQL> 
+SQL> INSERT INTO Books (Book_No, Book_Name, Author, Cost, Category) VALUES
+  2  (103, 'Mastering SQL', 'Loni', 250, 'Database');
+
+1 row created.
+
+SQL> INSERT INTO Books (Book_No, Book_Name, Author, Cost, Category) VALUES
+  2  (104, 'PL SQL-Ref', 'Scott Urman', 750, 'Database');
+
+1 row created.
+
+SQL> SELECT * FROM BOOKS;
+
+   BOOK_NO BOOK_NAME                                                                                                                                                                                    
+---------- ----------------------------------------------------------------------------------------------------                                                                                         
+AUTHOR                                                                                                     COST CATEGORY                                                                                
+---------------------------------------------------------------------------------------------------- ---------- --------------------------------------------------                                      
+       101 Let us C                                                                                                                                                                                     
+Denis Ritchie                                                                                               450 System                                                                                  
+                                                                                                                                                                                                        
+       102 Oracle - Complete Ref                                                                                                                                                                        
+Loni                                                                                                        550 Database                                                                                
+                                                                                                                                                                                                        
+       103 Mastering SQL                                                                                                                                                                                
+Loni                                                                                                        250 Database                                                                                
+                                                                                                                                                                                                        
+       104 PL SQL-Ref                                                                                                                                                                                   
+Scott Urman                                                                                                 750 Database                                                                                
+                                                                                                                                                                                                        
+
+SQL> COLUMN BOOK_NO FORMAT 999999;
+SQL> COLUMN BOOK_NAME FORMAT A30;
+SQL> COLUMN AUTHOR FORMAT A20;
+SQL> COLUMN COST FORMAT 9999.99;
+SQL> COLUMN CATEGORY FORMAT A10;
+SQL> SELECT* FROM BOOKS;
+
+BOOK_NO BOOK_NAME                      AUTHOR                   COST CATEGORY                                                                                                                           
+------- ------------------------------ -------------------- -------- ----------                                                                                                                         
+    101 Let us C                       Denis Ritchie          450.00 System                                                                                                                             
+    102 Oracle - Complete Ref          Loni                   550.00 Database                                                                                                                           
+    103 Mastering SQL                  Loni                   250.00 Database                                                                                                                           
+    104 PL SQL-Ref                     Scott Urman            750.00 Database                                                                                                                           
+
+SQL> DESC BOOKS;
+ Name                                                                                                              Null?    Type
+ ----------------------------------------------------------------------------------------------------------------- -------- ----------------------------------------------------------------------------
+ BOOK_NO                                                                                                           NOT NULL NUMBER(38)
+ BOOK_NAME                                                                                                         NOT NULL VARCHAR2(100)
+ AUTHOR                                                                                                                     VARCHAR2(100)
+ COST                                                                                                                       NUMBER(38)
+ CATEGORY                                                                                                                   VARCHAR2(50)
+
+SQL> COLUMN AUTHOR FORMAT A14;
+SQL> SELECT* FROM BOOKS;
+
+BOOK_NO BOOK_NAME                      AUTHOR             COST CATEGORY                                                                                                                                 
+------- ------------------------------ -------------- -------- ----------                                                                                                                               
+    101 Let us C                       Denis Ritchie    450.00 System                                                                                                                                   
+    102 Oracle - Complete Ref          Loni             550.00 Database                                                                                                                                 
+    103 Mastering SQL                  Loni             250.00 Database                                                                                                                                 
+    104 PL SQL-Ref                     Scott Urman      750.00 Database                                                                                                                                 
+
+SQL> COLUMN COST FORMAT 9999;
+SQL> SELECT* FROM BOOKS;
+
+BOOK_NO BOOK_NAME                      AUTHOR          COST CATEGORY                                                                                                                                    
+------- ------------------------------ -------------- ----- ----------                                                                                                                                  
+    101 Let us C                       Denis Ritchie    450 System                                                                                                                                      
+    102 Oracle - Complete Ref          Loni             550 Database                                                                                                                                    
+    103 Mastering SQL                  Loni             250 Database                                                                                                                                    
+    104 PL SQL-Ref                     Scott Urman      750 Database                                                                                                                                    
+
+SQL> INSERT INTO BOOKS (BOOK_NO, BOOK_NAME, AUTHOR_NAME, COST, CATEGORY)
+  2  VALUES (&BOOKNO, '&BOOK_NAME', '&AUTHOR_NAME', &COST, '&CATEGORY');
+Enter value for bookno: 
+Enter value for book_name: 
+Enter value for author_name: 
+Enter value for cost: 
+Enter value for category: 
+old   2: VALUES (&BOOKNO, '&BOOK_NAME', '&AUTHOR_NAME', &COST, '&CATEGORY')
+new   2: VALUES (, '', '', , '')
+VALUES (, '', '', , '')
+        *
+ERROR at line 2:
+ORA-00936: missing expression 
+
+
+SQL> 
+SQL> INSERT INTO BOOKS (BOOK_NO, BOOK_NAME, AUTHOR_NAME, COST, CATEGORY)
+  2  VALUES (&BOOKNO, '&BOOK_NAME', '&AUTHOR_NAME', &COST, '&CATEGORY');
+Enter value for bookno: 105;
+Enter value for book_name:                                      
+Enter value for author_name: 33
+Enter value for cost: 
+Enter value for category: 
+old   2: VALUES (&BOOKNO, '&BOOK_NAME', '&AUTHOR_NAME', &COST, '&CATEGORY')
+new   2: VALUES (105;, '                                     ', '33', , '')
+VALUES (105;, '                                     ', '33', , '')
+           *
+ERROR at line 2:
+ORA-00911: invalid character 
+
+
+SQL>  INSERT INTO BOOKS (BOOK_NO, BOOK_NAME, AUTHOR_NAME, COST, CATEGORY)
+  2   VALUES (&BOOKNO, '&BOOK_NAME', '&AUTHOR_NAME', &COST, '&CATEGORY');
+Enter value for bookno: 105
+Enter value for book_name: 'ADVANCE JAVA'
+Enter value for author_name: 'JOHN'
+Enter value for cost: 350
+Enter value for category: 'PROGRAMMING';
+old   2:  VALUES (&BOOKNO, '&BOOK_NAME', '&AUTHOR_NAME', &COST, '&CATEGORY')
+new   2:  VALUES (105, ''ADVANCE JAVA'', ''JOHN'', 350, ''PROGRAMMING';')
+ VALUES (105, ''ADVANCE JAVA'', ''JOHN'', 350, ''PROGRAMMING';')
+                *
+ERROR at line 2:
+ORA-00917: missing comma 
+
+
+SQL> INSERT INTO BOOKS (BOOK_NO, BOOK_NAME, AUTHOR_NAME, COST, CATEGORY)
+  2  VALUES (&BOOKNO, '&BOOK_NAME', '&AUTHOR_NAME', &COST, '&CATEGORY');
+Enter value for bookno: 105
+Enter value for book_name: 'ADVANCE JAVA'
+Enter value for author_name: 'JOHN'
+Enter value for cost: 450
+Enter value for category: 'PROGRAMMING';
+old   2: VALUES (&BOOKNO, '&BOOK_NAME', '&AUTHOR_NAME', &COST, '&CATEGORY')
+new   2: VALUES (105, ''ADVANCE JAVA'', ''JOHN'', 450, ''PROGRAMMING';')
+VALUES (105, ''ADVANCE JAVA'', ''JOHN'', 450, ''PROGRAMMING';')
+               *
+ERROR at line 2:
+ORA-00917: missing comma 
+
+
+SQL>  INSERT INTO BOOKS (BOOK_NO, BOOK_NAME, AUTHOR_NAME, COST, CATEGORY)
+  2   VALUES (&BOOKNO, '&BOOK_NAME', '&AUTHOR_NAME', &COST, '&CATEGORY');
+Enter value for bookno: 1,
+Enter value for book_name: 'JOHN'
+Enter value for author_name: 450,
+Enter value for cost: 'PROGRAMMING',
+Enter value for category: 'SYSTEM';
+old   2:  VALUES (&BOOKNO, '&BOOK_NAME', '&AUTHOR_NAME', &COST, '&CATEGORY')
+new   2:  VALUES (1,, ''JOHN'', '450,', 'PROGRAMMING',, ''SYSTEM';')
+ VALUES (1,, ''JOHN'', '450,', 'PROGRAMMING',, ''SYSTEM';')
+           *
+ERROR at line 2:
+ORA-00936: missing expression 
+
+
+SQL> 
+SQL> INSERT INTO Book VALUES (&Book_No, &Book_Name, &Author, &Cost, &Category);
+Enter value for book_no: 105
+Enter value for book_name: 'ADVANCE JAVA'
+Enter value for author: 'ROBERT'
+Enter value for cost: 600
+Enter value for category: 'PROGRAMMING'
+old   1: INSERT INTO Book VALUES (&Book_No, &Book_Name, &Author, &Cost, &Category)
+new   1: INSERT INTO Book VALUES (105, 'ADVANCE JAVA', 'ROBERT', 600, 'PROGRAMMING')
+INSERT INTO Book VALUES (105, 'ADVANCE JAVA', 'ROBERT', 600, 'PROGRAMMING')
+            *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+SQL> INSERT INTO BOOKS VALUES (&Book_No, &Book_Name, &Author, &Cost, &Category);
+Enter value for book_no: 105
+Enter value for book_name: 'ADVANCE JAVA'
+Enter value for author: 'ADAM'
+Enter value for cost: 600
+Enter value for category: 'PROGRAMMING'
+old   1: INSERT INTO BOOKS VALUES (&Book_No, &Book_Name, &Author, &Cost, &Category)
+new   1: INSERT INTO BOOKS VALUES (105, 'ADVANCE JAVA', 'ADAM', 600, 'PROGRAMMING')
+INSERT INTO BOOKS VALUES (105, 'ADVANCE JAVA', 'ADAM', 600, 'PROGRAMMING')
+*
+ERROR at line 1:
+ORA-02290: check constraint (SCOTT.SYS_C005845) violated 
+
+
+SQL> INSERT INTO BOOKS VALUES (&Book_No, &Book_Name, &Author, &Cost, &Category);
+Enter value for book_no: 105
+Enter value for book_name: 'CORE JAVA'
+Enter value for author: 'ROBERT'
+Enter value for cost: 600
+Enter value for category: 'SCIENCE'
+old   1: INSERT INTO BOOKS VALUES (&Book_No, &Book_Name, &Author, &Cost, &Category)
+new   1: INSERT INTO BOOKS VALUES (105, 'CORE JAVA', 'ROBERT', 600, 'SCIENCE')
+INSERT INTO BOOKS VALUES (105, 'CORE JAVA', 'ROBERT', 600, 'SCIENCE')
+*
+ERROR at line 1:
+ORA-02290: check constraint (SCOTT.SYS_C005845) violated 
+
+
+SQL> SELECT constraint_name, search_conditionFROM user_constraintsWHERE table_name = 'BOOKS';
+SELECT constraint_name, search_conditionFROM user_constraintsWHERE table_name = 'BOOKS'
+                                                                   *
+ERROR at line 1:
+ORA-00923: FROM keyword not found where expected 
+
+
+SQL> SELECT constraint_name, search_condition
+  2  FROM user_constraints
+  3  WHERE table_name = 'BOOKS';
+
+CONSTRAINT_NAME                SEARCH_CONDITION                                                                                                                                                         
+------------------------------ --------------------------------------------------------------------------------                                                                                         
+SYS_C005844                    "BOOK_NAME" IS NOT NULL                                                                                                                                                  
+SYS_C005845                    Category IN ('Science', 'Fiction', 'Database', 'RDBMS', 'Others', 'System')                                                                                              
+SYS_C005846                                                                                                                                                                                             
+
+SQL> INSERT INTO BOOKS VALUES (105, 'CORE JAVA', 'ROBERT', 600, 'Science');
+
+1 row created.
+
+SQL> DELECT FROM BOOKS
+SP2-0734: unknown command beginning "DELECT FRO..." - rest of line ignored.
+SQL> DELETE FROM BOOKS
+  2  WHERE BOOF_NO = 105;
+WHERE BOOF_NO = 105
+      *
+ERROR at line 2:
+ORA-00904: "BOOF_NO": invalid identifier 
+
+
+SQL> DELECT FROM BOOKS WHERE BOOK_NO = 105;
+SP2-0734: unknown command beginning "DELECT FRO..." - rest of line ignored.
+SQL> DELETE FROM BOOKS WHERE BOOK_NO = 105;
+
+1 row deleted.
+
+SQL> INSERT INTO BOOKS VALUES (&Book_No, &Book_Name, &Author, &Cost, &Category);
+Enter value for book_no: 105
+Enter value for book_name: 'CORE JAVA'
+Enter value for author: 'ROBER'
+Enter value for cost: 600
+Enter value for category: 'Science'
+old   1: INSERT INTO BOOKS VALUES (&Book_No, &Book_Name, &Author, &Cost, &Category)
+new   1: INSERT INTO BOOKS VALUES (105, 'CORE JAVA', 'ROBER', 600, 'Science')
+
+1 row created.
+
+SQL> n&
+SP2-0042: unknown command "n&" - rest of line ignored.
+SQL> &N;
+SP2-0042: unknown command "&N" - rest of line ignored.
+SQL> N&;
+SP2-0042: unknown command "N&" - rest of line ignored.
+SQL> /
+Enter value for book_no: 106
+Enter value for book_name: 'LORD OF THE RING'
+Enter value for author: 'TOLKEIN'
+Enter value for cost: 650
+Enter value for category: 'FICTION'
+old   1: INSERT INTO BOOKS VALUES (&Book_No, &Book_Name, &Author, &Cost, &Category)
+new   1: INSERT INTO BOOKS VALUES (106, 'LORD OF THE RING', 'TOLKEIN', 650, 'FICTION')
+INSERT INTO BOOKS VALUES (106, 'LORD OF THE RING', 'TOLKEIN', 650, 'FICTION')
+*
+ERROR at line 1:
+ORA-02290: check constraint (SCOTT.SYS_C005845) violated 
+
+
+SQL> /
+Enter value for book_no: 106
+Enter value for book_name: 'LORD OF THE RING'
+Enter value for author: 'TOLKEIN'
+Enter value for cost: 650
+Enter value for category: 'Fiction'
+old   1: INSERT INTO BOOKS VALUES (&Book_No, &Book_Name, &Author, &Cost, &Category)
+new   1: INSERT INTO BOOKS VALUES (106, 'LORD OF THE RING', 'TOLKEIN', 650, 'Fiction')
+
+1 row created.
+
+SQL> select * from books;
+
+BOOK_NO BOOK_NAME                      AUTHOR          COST CATEGORY                                                                                                                                    
+------- ------------------------------ -------------- ----- ----------                                                                                                                                  
+    101 Let us C                       Denis Ritchie    450 System                                                                                                                                      
+    102 Oracle - Complete Ref          Loni             550 Database                                                                                                                                    
+    103 Mastering SQL                  Loni             250 Database                                                                                                                                    
+    104 PL SQL-Ref                     Scott Urman      750 Database                                                                                                                                    
+    105 CORE JAVA                      ROBER            600 Science                                                                                                                                     
+    106 LORD OF THE RING               TOLKEIN          650 Fiction                                                                                                                                     
+
+6 rows selected.
+
+SQL> /
+
+BOOK_NO BOOK_NAME                      AUTHOR          COST CATEGORY                                                                                                                                    
+------- ------------------------------ -------------- ----- ----------                                                                                                                                  
+    101 Let us C                       Denis Ritchie    450 System                                                                                                                                      
+    102 Oracle - Complete Ref          Loni             550 Database                                                                                                                                    
+    103 Mastering SQL                  Loni             250 Database                                                                                                                                    
+    104 PL SQL-Ref                     Scott Urman      750 Database                                                                                                                                    
+    105 CORE JAVA                      ROBER            600 Science                                                                                                                                     
+    106 LORD OF THE RING               TOLKEIN          650 Fiction                                                                                                                                     
+
+6 rows selected.
+
+SQL>  INSERT INTO BOOKS VALUES (&Book_No, &Book_Name, &Author, &Cost, &Category);
+Enter value for book_no: 107
+Enter value for book_name: 'SQL COOKBOOK'
+Enter value for author: 'ANTHONY'
+Enter value for cost: 500
+Enter value for category: 'Database'
+old   1:  INSERT INTO BOOKS VALUES (&Book_No, &Book_Name, &Author, &Cost, &Category)
+new   1:  INSERT INTO BOOKS VALUES (107, 'SQL COOKBOOK', 'ANTHONY', 500, 'Database')
+
+1 row created.
+
+SQL> select* from books;
+
+BOOK_NO BOOK_NAME                      AUTHOR          COST CATEGORY                                                                                                                                    
+------- ------------------------------ -------------- ----- ----------                                                                                                                                  
+    101 Let us C                       Denis Ritchie    450 System                                                                                                                                      
+    102 Oracle - Complete Ref          Loni             550 Database                                                                                                                                    
+    103 Mastering SQL                  Loni             250 Database                                                                                                                                    
+    104 PL SQL-Ref                     Scott Urman      750 Database                                                                                                                                    
+    105 CORE JAVA                      ROBER            600 Science                                                                                                                                     
+    106 LORD OF THE RING               TOLKEIN          650 Fiction                                                                                                                                     
+    107 SQL COOKBOOK                   ANTHONY          500 Database                                                                                                                                    
+
+7 rows selected.
+
+SQL> --Create table Book101 similar to Book in structure with no data in
+SQL> it.
+SP2-0042: unknown command "it." - rest of line ignored.
+SQL> --Create table Book101 similar to Book in structure with no data in it--
+SQL> CREATE TABLE Book101 (
+  2      Book_No NUMBER,
+  3      Book_Name VARCHAR2(100),
+  4      Author VARCHAR2(100),
+  5      Cost NUMBER,
+  6      Category VARCHAR2(20)
+  7  );
+
+Table created.
+
+SQL> select* from book101;
+
+no rows selected
+
+SQL> --Insert into Book101 all the data in Book table using Selec--
+SQL> INSERT INTO BOOK101
+  2  SELECT* FROM BOOKS;
+
+7 rows created.
+
+SQL> SELECT
+  2  *FROM BOOK101;
+
+BOOK_NO BOOK_NAME                      AUTHOR          COST CATEGORY                                                                                                                                    
+------- ------------------------------ -------------- ----- ----------                                                                                                                                  
+    101 Let us C                       Denis Ritchie    450 System                                                                                                                                      
+    102 Oracle - Complete Ref          Loni             550 Database                                                                                                                                    
+    103 Mastering SQL                  Loni             250 Database                                                                                                                                    
+    104 PL SQL-Ref                     Scott Urman      750 Database                                                                                                                                    
+    105 CORE JAVA                      ROBER            600 Science                                                                                                                                     
+    106 LORD OF THE RING               TOLKEIN          650 Fiction                                                                                                                                     
+    107 SQL COOKBOOK                   ANTHONY          500 Database                                                                                                                                    
+
+7 rows selected.
+
+SQL> COMMIT;  --SAVE ALL DATA--
+> 
+  2  
+SQL> COMMIT;
+
+Commit complete.
+
+SQL> -- View data from the Member table
+SQL> SELECT * FROM Member;
+
+MEMBER_ID MEMBER_NAME    MEMBER_ADDRESS ACC_OPEN_DATE  MEMBERSHIP_TYPE FEES_PAID MAX_BOOKS_ALLOWED PENALTY_AMOUNT                                                                                       
+--------- -------------- -------------- -------------- --------------- --------- ----------------- --------------                                                                                       
+        1 RICHA SHARMA   PUNE           10-DEC-05      Lifetime             2500                 5             50                                                                                       
+        2 GARIMA SEN     PUNE           06-DEC-24      Annual               1000                 3                                                                                                      
+        3 ROHAN SHARMA   MUMBAI         12-OCT-06      Lifetime              500                 5             60                                                                                       
+        4 SWATI MISHRA   KERLA          23-NOV-08      Quarterly             600                 6             70                                                                                       
+        5 VARUN DHAVAN   THANE          24-SEP-08      Half Yearly           600                 6             70                                                                                       
+        6 RAM DAS        TRIPURA        25-JAN-10      Quarterly             400                 3             55                                                                                       
+        7 SMITH REDDY    BENGAL         10-JAN-23      Lifetime             3450                 6             80                                                                                       
+
+7 rows selected.
+
+SQL> 
+SQL> -- View data from the Book table
+SQL> SELECT * FROM Book;
+SELECT * FROM Book
+              *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+SQL> SELECT * FROM BOOKS;
+
+BOOK_NO BOOK_NAME                      AUTHOR          COST CATEGORY                                                                                                                                    
+------- ------------------------------ -------------- ----- ----------                                                                                                                                  
+    101 Let us C                       Denis Ritchie    450 System                                                                                                                                      
+    102 Oracle - Complete Ref          Loni             550 Database                                                                                                                                    
+    103 Mastering SQL                  Loni             250 Database                                                                                                                                    
+    104 PL SQL-Ref                     Scott Urman      750 Database                                                                                                                                    
+    105 CORE JAVA                      ROBER            600 Science                                                                                                                                     
+    106 LORD OF THE RING               TOLKEIN          650 Fiction                                                                                                                                     
+    107 SQL COOKBOOK                   ANTHONY          500 Database                                                                                                                                    
+
+7 rows selected.
+
+SQL> -- View data from the Book101 table
+SQL> 
+SQL> SELECT * FROM Book101;
+
+BOOK_NO BOOK_NAME                      AUTHOR          COST CATEGORY                                                                                                                                    
+------- ------------------------------ -------------- ----- ----------                                                                                                                                  
+    101 Let us C                       Denis Ritchie    450 System                                                                                                                                      
+    102 Oracle - Complete Ref          Loni             550 Database                                                                                                                                    
+    103 Mastering SQL                  Loni             250 Database                                                                                                                                    
+    104 PL SQL-Ref                     Scott Urman      750 Database                                                                                                                                    
+    105 CORE JAVA                      ROBER            600 Science                                                                                                                                     
+    106 LORD OF THE RING               TOLKEIN          650 Fiction                                                                                                                                     
+    107 SQL COOKBOOK                   ANTHONY          500 Database                                                                                                                                    
+
+7 rows selected.
+
+SQL> INSERT INTO BOOKS VALUES(105, 'NATIONAL GEOGRAPHIC', 'ADIS SCOTT', 1000, 'SCIENCE');
+INSERT INTO BOOKS VALUES(105, 'NATIONAL GEOGRAPHIC', 'ADIS SCOTT', 1000, 'SCIENCE')
+*
+ERROR at line 1:
+ORA-02290: check constraint (SCOTT.SYS_C005845) violated 
+
+
+SQL> INSERT INTO BOOKS VALUES(105, 'NATIONAL GEOGRAPHIC', 'ADIS SCOTT', 1000, 'Science');
+INSERT INTO BOOKS VALUES(105, 'NATIONAL GEOGRAPHIC', 'ADIS SCOTT', 1000, 'Science')
+*
+ERROR at line 1:
+ORA-00001: unique constraint (SCOTT.SYS_C005846) violated 
+
+
+SQL> INSERT INTO BOOKS VALUES(106, 'NATIONAL GEOGRAPHIC', 'ADIS SCOTT', 1000, 'Science');
+INSERT INTO BOOKS VALUES(106, 'NATIONAL GEOGRAPHIC', 'ADIS SCOTT', 1000, 'Science')
+*
+ERROR at line 1:
+ORA-00001: unique constraint (SCOTT.SYS_C005846) violated 
+
+
+SQL> DELETE FROM BOOKS WHERE BOOK_NO = 105;
+
+1 row deleted.
+
+SQL> INSERT INTO BOOKS VALUES(105, 'NATIONAL GEOGRAPHIC', 'ADIS SCOTT', 1000, 'Science');
+
+1 row created.
+
+SQL> --Undo the last changes.--
+SQL> ROLLBACK;
+
+Rollback complete.
+
+SQL> select* from books;
+
+BOOK_NO BOOK_NAME                      AUTHOR          COST CATEGORY                                                                                                                                    
+------- ------------------------------ -------------- ----- ----------                                                                                                                                  
+    101 Let us C                       Denis Ritchie    450 System                                                                                                                                      
+    102 Oracle - Complete Ref          Loni             550 Database                                                                                                                                    
+    103 Mastering SQL                  Loni             250 Database                                                                                                                                    
+    104 PL SQL-Ref                     Scott Urman      750 Database                                                                                                                                    
+    105 CORE JAVA                      ROBER            600 Science                                                                                                                                     
+    106 LORD OF THE RING               TOLKEIN          650 Fiction                                                                                                                                     
+    107 SQL COOKBOOK                   ANTHONY          500 Database                                                                                                                                    
+
+7 rows selected.
+
+SQL> ALTER TABLE BOOK
+  2  MODIFY
+  3  
+SQL> --MODIFY PRICE OF BOOK WITH ID 103 AND RS 300 AND CATEGORY RDBMS
+SQL> UPDATE BOOKS
+  2  SET COST = 300,          -- Update the price to Rs 300
+  3      CATEGORY = 'RDBMS'   -- Update the category to RDBMS
+  4  WHERE BOOK_NO = 103;      -- Specify the condition to match the book ID
+  5  
+SQL> ED
+Wrote file afiedt.buf
+
+  1  UPDATE BOOKS
+  2  SET COST = 300,          -- Update the price to Rs 300--
+  3  CATEGORY = 'RDBMS'   -- Update the category to RDBMS--
+  4* WHERE BOOK_NO = 103;      -- Specify the condition to match the book ID--
+  5  
+SQL> /
+WHERE BOOK_NO = 103;      -- Specify the condition to match the book ID--
+                   *
+ERROR at line 4:
+ORA-00911: invalid character 
+
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1  UPDATE BOOKS
+  2  SET COST = 300,          -- Update the price to Rs 300--
+  3  CATEGORY = 'RDBMS'   -- Update the category to RDBMS--
+  4* WHERE BOOK_NO = 103;      -- Specify the condition to match the book ID--
+SQL> /
+WHERE BOOK_NO = 103;      -- Specify the condition to match the book ID--
+                   *
+ERROR at line 4:
+ORA-00911: invalid character 
+
+
+SQL> UPDATE BOOKS
+  2  SET COST = 300,
+  3      CATEGORY = 'RDBMS'
+  4  WHERE BOOK_NO = 103;
+
+1 row updated.
+
+SQL> SELECT * FROM BOOKS WHERE BOOK_NO = 103;
+
+BOOK_NO BOOK_NAME                      AUTHOR          COST CATEGORY                                                                                                                                    
+------- ------------------------------ -------------- ----- ----------                                                                                                                                  
+    103 Mastering SQL                  Loni             300 RDBMS                                                                                                                                       
+
+SQL> --Rename the table Lib_Issue to Issue.
+SQL> RENAME LIB_ISSUE TO ISSUE;
+
+Table renamed.
+
+SQL> DROP TABLE ISSUE;
+
+Table dropped.
+
+SQL> --Create table Issue with constraint--
+SQL> CREATE TABLE ISSUE
+  2  (
+  3      LIB_ISSUE_ID NUMBER(10) PRIMARY KEY,      -- Primary key constraint--
+  4      BOOK_NO NUMBER(6) REFERENCES BOOKS(BOOK_NO), -- Foreign key referencing--
+  5      MEMBER_ID NUMBER(5) REFERENCES MEMBER(MEMBER_ID), -- Foreign key
+  6      ISSUE_DATE DATE CHECK (ISSUE_DATE <= SYSDATE),  -- Check constraint: Issue date cannot be in the future--
+  7      RETURN_DATE DATE CHECK (ISSUE_DATE < RETURN_DATE) -- Check constraint: Return date must be after issue date--
+  8  );
+)
+*
+ERROR at line 8:
+ORA-02438: Column check constraint cannot reference other columns 
+
+
+SQL> CREATE TABLE ISSUE (
+  2      LIB_ISSUE_ID NUMBER(10) PRIMARY KEY,               -- Primary key
+  3      BOOK_NO NUMBER(6) REFERENCES BOOKS(BOOK_NO),       -- Foreign key referencing BOOKS table
+  4      MEMBER_ID NUMBER(5) REFERENCES MEMBER(MEMBER_ID),  -- Foreign key referencing MEMBER table
+  5      ISSUE_DATE DATE CHECK (ISSUE_DATE <= SYSDATE),     -- Check to ensure issue date is not in the future
+  6      RETURN_DATE DATE                                    -- Return date
+  7  );
+    ISSUE_DATE DATE CHECK (ISSUE_DATE <= SYSDATE),     -- Check to ensure issue date is not in the future
+                                         *
+ERROR at line 5:
+ORA-02436: date or system variable wrongly specified in CHECK constraint 
+
+
+SQL> SPOOL OFF;
